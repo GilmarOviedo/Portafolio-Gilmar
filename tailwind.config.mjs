@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}', 
-],
+	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	darkMode: 'class',
 	theme: {
-		extend: {},
+	  extend: {
+		screens: {
+		  xs: '480px', 
+		  '3xl': '1600px', 
+		},
+	  },
 	},
-	plugins: [
-	],
-}
+	plugins: [],
+  };
+  
